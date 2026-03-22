@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tokenuts — Premium Crypto Gaming Brand Portfolio</title>
+<meta name="description" content="Tokenuts.com — a complete, turnkey crypto gambling brand for the Web3 gaming era. 14 premium domains including .com, .ai, and .co.uk. Crypto casino domains, tokenized betting portfolio, agentic AI casino brand. Available for acquisition.">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-deep: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-card-hover: #1a1a26;
+  --neon-green: #00ff88;
+  --neon-green-dim: #00cc6a;
+  --neon-purple: #a855f7;
+  --neon-blue: #3b82f6;
+  --neon-amber: #f59e0b;
+  --text-primary: #f0f0f5;
+  --text-secondary: #8888a0;
+  --text-dim: #55556a;
+  --border-subtle: #1e1e2e;
+  --glow-green: 0 0 30px rgba(0,255,136,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,255,136,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,136,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-glow-1 {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,255,136,0.06) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+  z-index: 0;
+  pointer-events: none;
+  animation: float1 20s ease-in-out infinite;
+}
+
+.bg-glow-2 {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(168,85,247,0.05) 0%, transparent 70%);
+  bottom: -150px;
+  left: -100px;
+  z-index: 0;
+  pointer-events: none;
+  animation: float2 25s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-40px, 30px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, -40px); }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border: 1px solid rgba(0,255,136,0.25);
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--neon-green);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  background: rgba(0,255,136,0.04);
+  animation: fadeDown 0.8s ease-out;
+}
+
+.hero-badge .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--neon-green);
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 4px var(--neon-green); }
+  50% { opacity: 0.4; box-shadow: none; }
+}
+
+.hero h1 {
+  font-size: clamp(3.2rem, 7vw, 5.5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 10px;
+  animation: fadeDown 0.8s ease-out 0.1s both;
+}
+
+.hero h1 .token { color: var(--text-primary); }
+
+.hero h1 .nuts {
+  background: linear-gradient(135deg, var(--neon-green), #00cc88, var(--neon-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h1 .dot-com {
+  font-weight: 400;
+  color: var(--text-dim);
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+
+.hero-tagline {
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  color: var(--text-secondary);
+  font-weight: 300;
+  max-width: 600px;
+  margin: 20px auto 0;
+  animation: fadeDown 0.8s ease-out 0.2s both;
+}
+
+.hero-tagline em {
+  color: var(--text-primary);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* STATS ROW */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  animation: fadeUp 0.8s ease-out 0.3s both;
+}
+
+.stat { text-align: center; }
+
+.stat-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--neon-green);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--neon-green);
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 650px;
+  font-weight: 300;
+}
+
+/* THE BRAND */
+.brand-section { padding: 60px 0 70px; }
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.brand-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.brand-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(0,255,136,0.15);
+  box-shadow: var(--glow-green);
+}
+
+.brand-card .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.brand-card .icon.green { background: rgba(0,255,136,0.1); }
+.brand-card .icon.purple { background: rgba(168,85,247,0.1); }
+.brand-card .icon.blue { background: rgba(59,130,246,0.1); }
+.brand-card .icon.amber { background: rgba(245,158,11,0.1); }
+
+.brand-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.brand-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* DOMAIN TABLE */
+.domains-section { padding: 60px 0 70px; }
+
+.domain-table {
+  margin-top: 40px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.domain-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.domain-row:last-child { border-bottom: none; }
+.domain-row:hover { background: var(--bg-card-hover); box-shadow: inset 3px 0 0 var(--neon-green); }
+
+.domain-row.header {
+  background: rgba(0,255,136,0.03);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding: 14px 28px;
+}
+
+.domain-row.header:hover { background: rgba(0,255,136,0.03); }
+
+.domain-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.domain-name.primary { color: var(--neon-green); font-weight: 600; }
+.domain-name.ai-ext { color: var(--neon-purple); font-weight: 600; }
+
+.domain-tag {
+  display: inline-flex;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.domain-tag.flagship { background: rgba(0,255,136,0.1); color: var(--neon-green); border: 1px solid rgba(0,255,136,0.2); }
+.domain-tag.ai { background: rgba(168,85,247,0.1); color: var(--neon-purple); border: 1px solid rgba(168,85,247,0.2); }
+.domain-tag.vertical { background: rgba(59,130,246,0.1); color: var(--neon-blue); border: 1px solid rgba(59,130,246,0.2); }
+.domain-tag.community { background: rgba(245,158,11,0.1); color: var(--neon-amber); border: 1px solid rgba(245,158,11,0.2); }
+.domain-tag.defensive { background: rgba(255,255,255,0.04); color: var(--text-dim); border: 1px solid var(--border-subtle); }
+
+.domain-ext {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* WHY THIS BRAND */
+.why-section { padding: 60px 0 70px; }
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.why-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  border-color: rgba(0,255,136,0.15);
+  transform: translateY(-3px);
+}
+
+.why-card .number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--neon-green);
+  margin-bottom: 14px;
+}
+
+.why-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
+
+.why-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+/* PERFECT FOR */
+.perfect-section { padding: 60px 0 70px; }
+
+.perfect-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.perfect-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.perfect-item:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(0,255,136,0.12);
+  box-shadow: 0 0 20px rgba(0,255,136,0.06);
+}
+
+.perfect-item .emoji { font-size: 1.5rem; flex-shrink: 0; }
+.perfect-item .text h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+.perfect-item .text p { font-size: 0.82rem; color: var(--text-dim); font-weight: 300; }
+
+/* PRICING */
+.pricing-section { padding: 70px 0; }
+
+.pricing-box {
+  background: linear-gradient(135deg, rgba(0,255,136,0.04), rgba(168,85,247,0.04));
+  border: 1px solid rgba(0,255,136,0.15);
+  border-radius: 24px;
+  padding: 60px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
+}
+
+.pricing-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--neon-green);
+  margin-bottom: 16px;
+}
+
+.pricing-amount {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+
+.pricing-amount .currency {
+  color: var(--text-dim);
+  font-weight: 400;
+  font-size: 0.5em;
+}
+
+.pricing-note {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 36px;
+  font-weight: 300;
+}
+
+.pricing-includes {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.pricing-includes .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.pricing-includes .check { color: var(--neon-green); font-weight: 700; }
+
+/* CTA */
+.cta-section {
+  padding: 60px 0 100px;
+  text-align: center;
+}
+
+.cta-section .section-heading {
+  max-width: 500px;
+  margin: 0 auto 12px;
+}
+
+.cta-section .section-desc { margin: 0 auto 36px; }
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 40px;
+  background: var(--neon-green);
+  color: var(--bg-deep);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #00e67a;
+  box-shadow: 0 0 40px rgba(0,255,136,0.25);
+  transform: translateY(-2px);
+}
+
+.cta-secondary {
+  display: block;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-weight: 300;
+}
+
+.cta-secondary a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* VISION SECTION */
+.vision-section { padding: 70px 0; }
+
+.vision-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.vision-text {}
+
+.vision-text p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.vision-text p strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.vision-lanes {
+  display: flex;
+  gap: 10px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.vision-lane {
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.vision-lane.ai { background: rgba(59,130,246,0.12); color: var(--neon-blue); border: 1px solid rgba(59,130,246,0.25); }
+.vision-lane.crypto { background: rgba(245,158,11,0.12); color: var(--neon-amber); border: 1px solid rgba(245,158,11,0.25); }
+.vision-lane.rwa { background: rgba(0,255,136,0.1); color: var(--neon-green); border: 1px solid rgba(0,255,136,0.2); }
+.vision-lane.depin { background: rgba(168,85,247,0.1); color: var(--neon-purple); border: 1px solid rgba(168,85,247,0.2); }
+
+/* Platform Mockup */
+.mockup-container {
+  background: #1a1a24;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.mockup-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: #14141e;
+}
+
+.mockup-logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.mockup-logo .beta {
+  font-size: 0.55rem;
+  padding: 2px 6px;
+  background: rgba(245,158,11,0.2);
+  color: var(--neon-amber);
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.mockup-online {
+  font-size: 0.65rem;
+  color: var(--neon-green);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.mockup-online .dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--neon-green);
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.mockup-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0 20px;
+  background: #14141e;
+}
+
+.mockup-tab {
+  padding: 10px 14px;
+  font-size: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-dim);
+  border-bottom: 2px solid transparent;
+  cursor: default;
+}
+
+.mockup-tab.active {
+  color: var(--neon-blue);
+  border-bottom-color: var(--neon-blue);
+}
+
+.mockup-body {
+  padding: 16px 20px;
+}
+
+.mockup-post {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.mockup-post:last-child { border-bottom: none; }
+
+.mockup-post-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.mockup-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.mockup-avatar.orange { background: rgba(245,158,11,0.2); }
+.mockup-avatar.blue { background: rgba(59,130,246,0.2); }
+.mockup-avatar.green { background: rgba(0,255,136,0.15); }
+
+.mockup-username {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mockup-handle {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.mockup-tag {
+  margin-left: auto;
+  font-size: 0.55rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+
+.mockup-tag.editorial { background: rgba(245,158,11,0.15); color: var(--neon-amber); }
+.mockup-tag.signal { background: rgba(0,255,136,0.1); color: var(--neon-green); }
+
+.mockup-post-body {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  padding-left: 36px;
+}
+
+.mockup-post-body strong { color: var(--text-primary); font-weight: 500; }
+
+.mockup-metrics {
+  display: flex;
+  gap: 16px;
+  padding-left: 36px;
+  margin-top: 8px;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.mockup-sidebar {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-subtle);
+  background: #14141e;
+}
+
+.mockup-sidebar-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--neon-amber);
+  margin-bottom: 10px;
+}
+
+.mockup-trending-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.mockup-trending-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mockup-trending-cat {
+  font-size: 0.55rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.mockup-trending-count {
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.vision-note {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-style: italic;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .brand-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .perfect-grid { grid-template-columns: 1fr; }
+  .vision-layout { grid-template-columns: 1fr; }
+  .stats-row { gap: 32px; }
+  .pricing-box { padding: 40px 24px; }
+  .pricing-includes { flex-direction: column; align-items: center; gap: 12px; }
+  .domain-row { grid-template-columns: 1fr auto; gap: 8px; }
+  .domain-ext { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-glow-1, .bg-glow-2 { animation: none; }
+  .hero-badge .dot { animation: none; }
+  .hero-badge, .hero h1, .hero-tagline, .stats-row { animation: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-glow-1"></div>
+<div class="bg-glow-2"></div>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Brand Portfolio For Sale
+    </div>
+    <h1>
+      <span class="token">token</span><span class="nuts">uts</span><span class="dot-com">.com</span>
+    </h1>
+    <p class="hero-tagline">
+      A <em>complete, turnkey brand identity</em> for the crypto gaming era — 14 premium domains covering every angle, ready to deploy.
+    </p>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-row">
+    <div class="stat">
+      <div class="stat-number">14</div>
+      <div class="stat-label">Domains</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">5</div>
+      <div class="stat-label">Verticals</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">.com</div>
+      <div class="stat-label">+ .co.uk + .ai</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Brand Control</div>
+    </div>
+  </div>
+
+  <!-- THE BRAND -->
+  <section class="brand-section">
+    <div class="section-title">// The Brand</div>
+    <h2 class="section-heading">Two words. Infinite potential.</h2>
+    <p class="section-desc">Tokenuts sits at the intersection of two of the fastest-growing sectors in digital — crypto tokens and online gaming. Memorable, playful, and instantly brandable.</p>
+
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="icon green">🎰</div>
+        <h3>Crypto Casino</h3>
+        <p>The natural home for a token-based online casino platform. Provably fair, blockchain-native, built for the Web3 generation.</p>
+      </div>
+      <div class="brand-card">
+        <div class="icon purple">🎮</div>
+        <h3>Token Gaming</h3>
+        <p>Play-to-earn, NFT gaming, or token-gated experiences — the name works across every gaming vertical in Web3.</p>
+      </div>
+      <div class="brand-card">
+        <div class="icon blue">🤖</div>
+        <h3>AI-Powered Play</h3>
+        <p>AI dealers, autonomous betting agents, personalised odds engines — the .ai extension positions the brand for the agentic era. AI.com sold for $70M in 2025; the convergence of AI and crypto is where the smart money is moving.</p>
+      </div>
+      <div class="brand-card">
+        <div class="icon amber">🏠</div>
+        <h3>Community Brand</h3>
+        <p>"I'm a Tokenutter" — the name has built-in community identity. Perfect for a loyalty ecosystem, membership platform, or media brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMAIN TABLE -->
+  <section class="domains-section">
+    <div class="section-title">// The Collection</div>
+    <h2 class="section-heading">14 domains. Complete coverage.</h2>
+    <p class="section-desc">The primary brand, the .ai future-proof, five gaming verticals, geographic protection, and full defensive coverage. No loose ends.</p>
+
+    <div class="domain-table">
+      <div class="domain-row header">
+        <span>Domain</span>
+        <span>Type</span>
+        <span>Extension</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name primary">tokenuts.com</span>
+        <span class="domain-tag flagship">Flagship</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name ai-ext">tokenuts.ai</span>
+        <span class="domain-tag ai">AI Extension</span>
+        <span class="domain-ext">.ai</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenutscasino.com</span>
+        <span class="domain-tag vertical">Vertical</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenutsbet.com</span>
+        <span class="domain-tag vertical">Vertical</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenutspoker.com</span>
+        <span class="domain-tag vertical">Vertical</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenutsgames.com</span>
+        <span class="domain-tag vertical">Vertical</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenutsgaming.com</span>
+        <span class="domain-tag vertical">Vertical</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenutter.com</span>
+        <span class="domain-tag community">Community</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenutters.com</span>
+        <span class="domain-tag community">Community</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenut.com</span>
+        <span class="domain-tag defensive">Defensive</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokennuts.com</span>
+        <span class="domain-tag defensive">Defensive</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">token-nuts.com</span>
+        <span class="domain-tag defensive">Defensive</span>
+        <span class="domain-ext">.com</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenut.co.uk</span>
+        <span class="domain-tag defensive">UK Coverage</span>
+        <span class="domain-ext">.co.uk</span>
+      </div>
+      <div class="domain-row">
+        <span class="domain-name">tokenuts.co.uk</span>
+        <span class="domain-tag defensive">UK Coverage</span>
+        <span class="domain-ext">.co.uk</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE VISION -->
+  <section class="vision-section">
+    <div class="section-title">// A Potential Vision</div>
+    <h2 class="section-heading">More than a name. A platform waiting to happen.</h2>
+    <p class="section-desc">Tokenuts isn't just a brandable domain — it's a fully conceived product concept for the converging token economy.</p>
+
+    <div class="vision-layout">
+      <div class="vision-text">
+        <p>Three massive token economies are converging into a single landscape, yet <strong>no platform serves them as one category</strong>. AI tokens (the compute credits powering every model from Anthropic to Mistral), crypto tokens (the coins and governance tokens driving decentralised finance), and tokenised real-world assets (the stocks, bonds, and real estate migrating onto blockchain rails) are all accelerating simultaneously.</p>
+
+        <p><strong>TOKENUTS fills the gap:</strong> a vertical social platform for the entire token economy. Think X's immediacy combined with StockTwits' financial focus — but for tokens across every lane.</p>
+
+        <div class="vision-lanes">
+          <span class="vision-lane ai">AI Tokens</span>
+          <span class="vision-lane crypto">Crypto</span>
+          <span class="vision-lane rwa">RWA</span>
+          <span class="vision-lane depin">DePIN</span>
+        </div>
+
+        <p>The concept includes a real-time social feed, token price tracker across all three lanes, a knowledge hub for education and SEO, opportunity signals for premium subscribers, and built-in community identity — <strong>"Are you a Tokenutter?"</strong></p>
+
+        <p>This is just one possible direction. The brand works equally well for a crypto casino, a Web3 gaming studio, a token analytics tool, or a community media platform. <strong>The name opens doors — where you walk is up to you.</strong></p>
+      </div>
+
+      <!-- Platform Mockup -->
+      <div class="mockup-container">
+        <div class="mockup-topbar">
+          <div class="mockup-logo">TOKENUTS <span class="beta">BETA</span></div>
+          <div class="mockup-online"><span class="dot"></span>4,218 Tokenutters online</div>
+        </div>
+        <div class="mockup-tabs">
+          <div class="mockup-tab">All</div>
+          <div class="mockup-tab active">AI Tokens</div>
+          <div class="mockup-tab">Crypto</div>
+          <div class="mockup-tab">RWA</div>
+          <div class="mockup-tab">DePIN</div>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-post">
+            <div class="mockup-post-header">
+              <div class="mockup-avatar blue">🤖</div>
+              <div>
+                <span class="mockup-username">AI Token Tracker</span>
+                <span class="mockup-handle"> · @ai_token_tracker</span>
+              </div>
+              <span class="mockup-tag signal">SIGNAL</span>
+            </div>
+            <div class="mockup-post-body">
+              <strong>GPT-4.1: $2.00/M input</strong><br>
+              Claude Opus: $15.00/M input<br>
+              Claude Sonnet: $3.00/M input<br>
+              Gemini 2.5 Pro: $1.25/M input<br>
+              Llama 4 Maverick: $0.20/M<br><br>
+              Open-source is eating the floor. Proprietary models need to justify 10x premiums with reliability.
+            </div>
+            <div class="mockup-metrics">
+              <span>💬 247</span>
+              <span>🔗 891</span>
+              <span>🥜 2.1K</span>
+              <span>👁 89.1K</span>
+            </div>
+          </div>
+          <div class="mockup-post">
+            <div class="mockup-post-header">
+              <div class="mockup-avatar orange">🥜</div>
+              <div>
+                <span class="mockup-username">TOKENUTS Official</span>
+                <span class="mockup-handle"> · @tokenutHQ</span>
+              </div>
+              <span class="mockup-tag editorial">EDITORIAL</span>
+            </div>
+            <div class="mockup-post-body">
+              <strong>🥜 THE TOKENUT TAKE</strong><br><br>
+              Everyone's asking: will AI tokens and crypto tokens converge?<br><br>
+              They already have. You're paying OpenAI in compute tokens. You're staking on-chain tokens for GPU access via Akash. Render Network tokenises GPU compute.<br><br>
+              The word 'token' is becoming the universal unit of the digital economy. <strong>And we're all Tokenutters now.</strong>
+            </div>
+            <div class="mockup-metrics">
+              <span>💬 567</span>
+              <span>🔗 2.1K</span>
+              <span>🥜 4.5K</span>
+              <span>👁 201K</span>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-sidebar">
+          <div class="mockup-sidebar-title">🔥 Trending on TOKENUTS</div>
+          <div class="mockup-trending-item">
+            <div>
+              <div class="mockup-trending-cat">AI Tokens</div>
+              <div class="mockup-trending-tag">#GPT4.1PriceDrop</div>
+            </div>
+            <div class="mockup-trending-count">14.2K posts</div>
+          </div>
+          <div class="mockup-trending-item">
+            <div>
+              <div class="mockup-trending-cat">Crypto</div>
+              <div class="mockup-trending-tag">#ETHWhaleAlert</div>
+            </div>
+            <div class="mockup-trending-count">8.9K posts</div>
+          </div>
+          <div class="mockup-trending-item">
+            <div>
+              <div class="mockup-trending-cat">RWA</div>
+              <div class="mockup-trending-tag">#BlackRockBUIDL</div>
+            </div>
+            <div class="mockup-trending-count">6.1K posts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vision-note">
+      Concept visualisation only — one of many possible directions for the Tokenuts brand.
+    </div>
+  </section>
+
+  <!-- WHY THIS BRAND -->
+  <section class="why-section">
+    <div class="section-title">// Why Tokenuts</div>
+    <h2 class="section-heading">Built for the moment</h2>
+    <p class="section-desc">The crypto gaming sector is accelerating — and AI is supercharging it. Autonomous betting agents, AI-powered odds engines, and tokenised gameplay are converging. The right brand from day one is the difference between building trust and chasing credibility.</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="number">~$120B+</div>
+        <h3>Online Gambling Market</h3>
+        <p>Global online gambling revenue projected at $120–$143B for 2026, growing at 10%+ CAGR toward $212B by 2030.</p>
+      </div>
+      <div class="why-card">
+        <div class="number">$65B+</div>
+        <h3>Crypto Gambling Sector</h3>
+        <p>Crypto gambling projected to exceed $65 billion by 2026 — growing at roughly double the rate of traditional iGaming.</p>
+      </div>
+      <div class="why-card">
+        <div class="number">#1</div>
+        <h3>Brandable .com</h3>
+        <p>A memorable, two-syllable brand at the intersection of tokens and gaming — already protected on every flank with the .ai for the agentic era.</p>
+      </div>
+    </div>
+
+    <!-- AI.com Precedent Callout -->
+    <div style="margin-top:32px; padding:24px 32px; background:linear-gradient(135deg, rgba(168,85,247,0.06), rgba(59,130,246,0.06)); border:1px solid rgba(168,85,247,0.2); border-radius:14px; text-align:center;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--neon-purple); margin-bottom:8px;">Agentic AI Ready</div>
+      <p style="color:var(--text-secondary); font-size:0.95rem; font-weight:300; max-width:600px; margin:0 auto;">AI.com sold for <strong style="color:var(--text-primary);">$70 million</strong> in 2025, acquired by Crypto.com to power their agentic AI platform. The convergence of AI and crypto gaming is accelerating — Tokenuts is positioned at that intersection with both .com and .ai secured.</p>
+    </div>
+
+    <p style="text-align:center; margin-top:20px; font-size:0.75rem; color:var(--text-dim); font-family:'JetBrains Mono',monospace;">Sources: <a href="https://www.researchandmarkets.com/reports/5939778/online-gambling-market-report" style="color:var(--text-dim); text-decoration:underline; text-underline-offset:3px;" target="_blank">ResearchAndMarkets</a>, <a href="https://www.mordorintelligence.com/industry-reports/online-gambling-market" style="color:var(--text-dim); text-decoration:underline; text-underline-offset:3px;" target="_blank">Mordor Intelligence</a>, <a href="https://www.webopedia.com/crypto-gambling/casinos/guides/crypto-gambling-trends/" style="color:var(--text-dim); text-decoration:underline; text-underline-offset:3px;" target="_blank">Webopedia</a> (2025–2026 data)</p>
+  </section>
+
+  <!-- PERFECT FOR -->
+  <section class="perfect-section">
+    <div class="section-title">// Perfect For</div>
+    <h2 class="section-heading">Who should own this brand?</h2>
+
+    <div class="perfect-grid">
+      <div class="perfect-item">
+        <span class="emoji">🎰</span>
+        <div class="text">
+          <h4>Crypto Casino Operators</h4>
+          <p>Launch with instant brand credibility and full domain coverage</p>
+        </div>
+      </div>
+      <div class="perfect-item">
+        <span class="emoji">🕹️</span>
+        <div class="text">
+          <h4>Web3 Gaming Studios</h4>
+          <p>Token-gated gaming platforms, play-to-earn ecosystems</p>
+        </div>
+      </div>
+      <div class="perfect-item">
+        <span class="emoji">💰</span>
+        <div class="text">
+          <h4>DeFi / Token Projects</h4>
+          <p>Community-first token projects needing a memorable consumer brand</p>
+        </div>
+      </div>
+      <div class="perfect-item">
+        <span class="emoji">📺</span>
+        <div class="text">
+          <h4>Crypto Media / Content</h4>
+          <p>YouTube channels, podcasts, newsletters covering token culture</p>
+        </div>
+      </div>
+      <div class="perfect-item">
+        <span class="emoji">🏢</span>
+        <div class="text">
+          <h4>iGaming Companies</h4>
+          <p>Established operators expanding into crypto and blockchain gaming</p>
+        </div>
+      </div>
+      <div class="perfect-item">
+        <span class="emoji">🤖</span>
+        <div class="text">
+          <h4>Agentic AI &amp; Web3 Gaming</h4>
+          <p>Autonomous betting agents, AI-driven odds platforms, decentralised gaming infrastructure</p>
+        </div>
+      </div>
+      <div class="perfect-item">
+        <span class="emoji">🚀</span>
+        <div class="text">
+          <h4>Startup Founders</h4>
+          <p>Skip the naming headache — launch day one with a complete brand identity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section">
+    <div class="pricing-box">
+      <div class="pricing-label">Asking Price — Complete Portfolio</div>
+      <div class="pricing-amount"><span class="currency">$</span>75,000</div>
+      <p class="pricing-note">Negotiable for serious offers. Bundle sale preferred.</p>
+
+      <div class="pricing-includes">
+        <div class="item"><span class="check">✓</span> 14 premium domains</div>
+        <div class="item"><span class="check">✓</span> .com + .ai + .co.uk</div>
+        <div class="item"><span class="check">✓</span> 5 gaming verticals</div>
+        <div class="item"><span class="check">✓</span> Full defensive coverage</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="section-title">// Enquire</div>
+    <h2 class="section-heading">Interested in acquiring Tokenuts?</h2>
+    <p class="section-desc">This portfolio is available for outright purchase. Serious enquiries only.</p>
+    <a href="/cdn-cgi/l/email-protection#44252721202b29252d2a3725282137042329252d286a272b29" class="cta-button">
+      Get In Touch →
+    </a>
+    <span class="cta-secondary">or email directly: <a href="/cdn-cgi/l/email-protection#ea8b898f8e85878b8384998b868f99aa8d878b8386c4898587"><span class="__cf_email__" data-cfemail="c8a9abadaca7a5a9a1a6bba9a4adbb88afa5a9a1a4e6aba7a5">[email&#160;protected]</span></a></span>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Tokenu
